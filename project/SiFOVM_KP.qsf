@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Stratix II"
 set_global_assignment -name DEVICE AUTO
-set_global_assignment -name TOP_LEVEL_ENTITY SiFOVM_KP
+set_global_assignment -name TOP_LEVEL_ENTITY stack_memory
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 9.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "21:59:38  MAY 02, 2026"
 set_global_assignment -name LAST_QUARTUS_VERSION 9.1
@@ -46,11 +46,38 @@ set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id e
 set_global_assignment -name SEARCH_PATH lab3_var7_v1/
 set_global_assignment -name SEARCH_PATH lab2_var2_v1/
 set_global_assignment -name QIP_FILE lpm_counter0.qip
-set_global_assignment -name QIP_FILE "../../labs/Laba 6/lab6_var4_v1/lpm_decode2.qip"
-set_global_assignment -name QIP_FILE "../../labs/Laba 6/lab6_var4_v1/lpm_ff7.qip"
-set_global_assignment -name QIP_FILE "../../labs/Laba 6/lab6_var4_v1/lpm_mux1.qip"
 set_global_assignment -name BDF_FILE stack_memory.bdf
 set_global_assignment -name BDF_FILE stack_controller.bdf
 set_global_assignment -name BDF_FILE stack_unit.bdf
 set_global_assignment -name QIP_FILE lpm_decode0.qip
 set_global_assignment -name QIP_FILE lpm_bustri0.qip
+set_global_assignment -name BDF_FILE cache_line_bank.bdf
+set_global_assignment -name QIP_FILE lpm_decode1.qip
+set_global_assignment -name QIP_FILE lpm_mux0.qip
+set_global_assignment -name QIP_FILE lpm_ff0.qip
+set_global_assignment -name QIP_FILE lpm_dff6.qip
+set_global_assignment -name QIP_FILE lpm_dff0.qip
+set_global_assignment -name QIP_FILE lpm_dff1.qip
+set_global_assignment -name QIP_FILE lpm_compare0.qip
+set_global_assignment -name QIP_FILE lpm_mux4.qip
+set_global_assignment -name BDF_FILE cache_set_4_way.bdf
+set_global_assignment -name QIP_FILE lpm_mux1.qip
+set_global_assignment -name BDF_FILE cache_set_controller.bdf
+set_global_assignment -name QIP_FILE lpm_counter1.qip
+set_global_assignment -name QIP_FILE lpm_decode2.qip
+set_global_assignment -name QIP_FILE lpm_mux2.qip
+set_global_assignment -name BDF_FILE cache_unit.bdf
+set_global_assignment -name QIP_FILE lpm_decode3.qip
+set_global_assignment -name QIP_FILE lpm_mux3.qip
+set_global_assignment -name QIP_FILE lpm_decode4.qip
+set_global_assignment -name QIP_FILE lpm_decode5.qip
+set_global_assignment -name QIP_FILE lpm_mux6.qip
+set_global_assignment -name BDF_FILE logic_OR.bdf
+set_global_assignment -name QIP_FILE lpm_or0.qip
+set_global_assignment -name BDF_FILE logic_NXOR.bdf
+set_global_assignment -name QIP_FILE lpm_xor0.qip
+set_global_assignment -name QIP_FILE "../../labs/Laba 5/lab5_var4_v1/lpm_inv0.qip"
+set_global_assignment -name BDF_FILE ROR.bdf
+set_global_assignment -name QIP_FILE lpm_clshift0.qip
+set_global_assignment -name BDF_FILE CMP.bdf
+set_global_assignment -name QIP_FILE lpm_add_sub0.qip
