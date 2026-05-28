@@ -15,7 +15,6 @@
 
 FUNCTION lpm_dff2 
 (
-	aclr,
 	clock,
 	data[15..0],
 	enable

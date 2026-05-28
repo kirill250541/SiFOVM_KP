@@ -42,7 +42,6 @@ USE lpm.all;
 ENTITY lpm_dff2 IS
 	PORT
 	(
-		aclr		: IN STD_LOGIC ;
 		clock		: IN STD_LOGIC ;
 		data		: IN STD_LOGIC_VECTOR (15 DOWNTO 0);
 		enable		: IN STD_LOGIC ;
@@ -65,7 +64,6 @@ ARCHITECTURE SYN OF lpm_dff2 IS
 	);
 	PORT (
 			enable	: IN STD_LOGIC ;
-			aclr	: IN STD_LOGIC ;
 			clock	: IN STD_LOGIC ;
 			q	: OUT STD_LOGIC_VECTOR (15 DOWNTO 0);
 			data	: IN STD_LOGIC_VECTOR (15 DOWNTO 0)
@@ -83,7 +81,6 @@ BEGIN
 	)
 	PORT MAP (
 		enable => enable,
-		aclr => aclr,
 		clock => clock,
 		data => data,
 		q => sub_wire0
@@ -96,7 +93,7 @@ END SYN;
 -- ============================================================
 -- CNX file retrieval info
 -- ============================================================
--- Retrieval info: PRIVATE: ACLR NUMERIC "1"
+-- Retrieval info: PRIVATE: ACLR NUMERIC "0"
 -- Retrieval info: PRIVATE: ALOAD NUMERIC "0"
 -- Retrieval info: PRIVATE: ASET NUMERIC "0"
 -- Retrieval info: PRIVATE: ASET_ALL1 NUMERIC "1"
@@ -113,7 +110,6 @@ END SYN;
 -- Retrieval info: CONSTANT: LPM_FFTYPE STRING "DFF"
 -- Retrieval info: CONSTANT: LPM_TYPE STRING "LPM_FF"
 -- Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "16"
--- Retrieval info: USED_PORT: aclr 0 0 0 0 INPUT NODEFVAL aclr
 -- Retrieval info: USED_PORT: clock 0 0 0 0 INPUT NODEFVAL clock
 -- Retrieval info: USED_PORT: data 0 0 16 0 INPUT NODEFVAL data[15..0]
 -- Retrieval info: USED_PORT: enable 0 0 0 0 INPUT NODEFVAL enable
@@ -121,7 +117,6 @@ END SYN;
 -- Retrieval info: CONNECT: @clock 0 0 0 0 clock 0 0 0 0
 -- Retrieval info: CONNECT: q 0 0 16 0 @q 0 0 16 0
 -- Retrieval info: CONNECT: @enable 0 0 0 0 enable 0 0 0 0
--- Retrieval info: CONNECT: @aclr 0 0 0 0 aclr 0 0 0 0
 -- Retrieval info: CONNECT: @data 0 0 16 0 data 0 0 16 0
 -- Retrieval info: LIBRARY: lpm lpm.lpm_components.all
 -- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_dff2.vhd TRUE

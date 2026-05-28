@@ -26,8 +26,8 @@ applicable agreement for further details.
 	(port
 		(pt 0 32)
 		(input)
-		(text "data[10..0]" (rect 0 0 60 14)(font "Arial" (font_size 8)))
-		(text "data[10..0]" (rect 20 26 71 39)(font "Arial" (font_size 8)))
+		(text "data[9..0]" (rect 0 0 53 14)(font "Arial" (font_size 8)))
+		(text "data[9..0]" (rect 20 26 65 39)(font "Arial" (font_size 8)))
 		(line (pt 0 32)(pt 16 32)(line_width 3))
 	)
 	(port
@@ -36,13 +36,6 @@ applicable agreement for further details.
 		(text "clock" (rect 0 0 29 14)(font "Arial" (font_size 8)))
 		(text "clock" (rect 26 42 49 55)(font "Arial" (font_size 8)))
 		(line (pt 0 48)(pt 16 48)(line_width 1))
-	)
-	(port
-		(pt 0 64)
-		(input)
-		(text "enable" (rect 0 0 37 14)(font "Arial" (font_size 8)))
-		(text "enable" (rect 20 58 53 71)(font "Arial" (font_size 8)))
-		(line (pt 0 64)(pt 16 64)(line_width 1))
 	)
 	(port
 		(pt 80 96)
@@ -54,8 +47,8 @@ applicable agreement for further details.
 	(port
 		(pt 144 40)
 		(output)
-		(text "q[10..0]" (rect 0 0 42 14)(font "Arial" (font_size 8)))
-		(text "q[10..0]" (rect 89 34 125 47)(font "Arial" (font_size 8)))
+		(text "q[9..0]" (rect 0 0 35 14)(font "Arial" (font_size 8)))
+		(text "q[9..0]" (rect 95 34 125 47)(font "Arial" (font_size 8)))
 		(line (pt 144 40)(pt 128 40)(line_width 3))
 	)
 	(drawing

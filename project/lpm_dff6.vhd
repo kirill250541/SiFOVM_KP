@@ -44,16 +44,15 @@ ENTITY lpm_dff6 IS
 	(
 		aclr		: IN STD_LOGIC ;
 		clock		: IN STD_LOGIC ;
-		data		: IN STD_LOGIC_VECTOR (10 DOWNTO 0);
-		enable		: IN STD_LOGIC ;
-		q		: OUT STD_LOGIC_VECTOR (10 DOWNTO 0)
+		data		: IN STD_LOGIC_VECTOR (9 DOWNTO 0);
+		q		: OUT STD_LOGIC_VECTOR (9 DOWNTO 0)
 	);
 END lpm_dff6;
 
 
 ARCHITECTURE SYN OF lpm_dff6 IS
 
-	SIGNAL sub_wire0	: STD_LOGIC_VECTOR (10 DOWNTO 0);
+	SIGNAL sub_wire0	: STD_LOGIC_VECTOR (9 DOWNTO 0);
 
 
 
@@ -64,25 +63,23 @@ ARCHITECTURE SYN OF lpm_dff6 IS
 		lpm_width		: NATURAL
 	);
 	PORT (
-			enable	: IN STD_LOGIC ;
 			aclr	: IN STD_LOGIC ;
 			clock	: IN STD_LOGIC ;
-			q	: OUT STD_LOGIC_VECTOR (10 DOWNTO 0);
-			data	: IN STD_LOGIC_VECTOR (10 DOWNTO 0)
+			q	: OUT STD_LOGIC_VECTOR (9 DOWNTO 0);
+			data	: IN STD_LOGIC_VECTOR (9 DOWNTO 0)
 	);
 	END COMPONENT;
 
 BEGIN
-	q    <= sub_wire0(10 DOWNTO 0);
+	q    <= sub_wire0(9 DOWNTO 0);
 
 	lpm_ff_component : lpm_ff
 	GENERIC MAP (
 		lpm_fftype => "DFF",
 		lpm_type => "LPM_FF",
-		lpm_width => 11
+		lpm_width => 10
 	)
 	PORT MAP (
-		enable => enable,
 		aclr => aclr,
 		clock => clock,
 		data => data,
@@ -100,7 +97,7 @@ END SYN;
 -- Retrieval info: PRIVATE: ALOAD NUMERIC "0"
 -- Retrieval info: PRIVATE: ASET NUMERIC "0"
 -- Retrieval info: PRIVATE: ASET_ALL1 NUMERIC "1"
--- Retrieval info: PRIVATE: CLK_EN NUMERIC "1"
+-- Retrieval info: PRIVATE: CLK_EN NUMERIC "0"
 -- Retrieval info: PRIVATE: DFF NUMERIC "1"
 -- Retrieval info: PRIVATE: INTENDED_DEVICE_FAMILY STRING "Stratix II"
 -- Retrieval info: PRIVATE: SCLR NUMERIC "0"
@@ -109,20 +106,18 @@ END SYN;
 -- Retrieval info: PRIVATE: SSET_ALL1 NUMERIC "1"
 -- Retrieval info: PRIVATE: SYNTH_WRAPPER_GEN_POSTFIX STRING "0"
 -- Retrieval info: PRIVATE: UseTFFdataPort NUMERIC "0"
--- Retrieval info: PRIVATE: nBit NUMERIC "11"
+-- Retrieval info: PRIVATE: nBit NUMERIC "10"
 -- Retrieval info: CONSTANT: LPM_FFTYPE STRING "DFF"
 -- Retrieval info: CONSTANT: LPM_TYPE STRING "LPM_FF"
--- Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "11"
+-- Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "10"
 -- Retrieval info: USED_PORT: aclr 0 0 0 0 INPUT NODEFVAL aclr
 -- Retrieval info: USED_PORT: clock 0 0 0 0 INPUT NODEFVAL clock
--- Retrieval info: USED_PORT: data 0 0 11 0 INPUT NODEFVAL data[10..0]
--- Retrieval info: USED_PORT: enable 0 0 0 0 INPUT NODEFVAL enable
--- Retrieval info: USED_PORT: q 0 0 11 0 OUTPUT NODEFVAL q[10..0]
+-- Retrieval info: USED_PORT: data 0 0 10 0 INPUT NODEFVAL data[9..0]
+-- Retrieval info: USED_PORT: q 0 0 10 0 OUTPUT NODEFVAL q[9..0]
 -- Retrieval info: CONNECT: @clock 0 0 0 0 clock 0 0 0 0
--- Retrieval info: CONNECT: q 0 0 11 0 @q 0 0 11 0
--- Retrieval info: CONNECT: @enable 0 0 0 0 enable 0 0 0 0
+-- Retrieval info: CONNECT: q 0 0 10 0 @q 0 0 10 0
 -- Retrieval info: CONNECT: @aclr 0 0 0 0 aclr 0 0 0 0
--- Retrieval info: CONNECT: @data 0 0 11 0 data 0 0 11 0
+-- Retrieval info: CONNECT: @data 0 0 10 0 data 0 0 10 0
 -- Retrieval info: LIBRARY: lpm lpm.lpm_components.all
 -- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_dff6.vhd TRUE
 -- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_dff6.inc TRUE

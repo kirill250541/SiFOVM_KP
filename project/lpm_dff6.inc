@@ -17,10 +17,9 @@ FUNCTION lpm_dff6
 (
 	aclr,
 	clock,
-	data[10..0],
-	enable
+	data[9..0]
 )
 
 RETURNS (
-	q[10..0]
+	q[9..0]
 );
