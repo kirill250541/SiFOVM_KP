@@ -45,6 +45,20 @@ set_global_assignment -name LAST_QUARTUS_VERSION 9.1
 set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
 set_global_assignment -name SEARCH_PATH lab3_var7_v1/
 set_global_assignment -name SEARCH_PATH lab2_var2_v1/
+set_global_assignment -name BDF_FILE dff_addr.bdf
+set_global_assignment -name BDF_FILE fulladd.bdf
+set_global_assignment -name SOURCE_FILE lpm_add_sub6.cmp
+set_global_assignment -name VHDL_FILE lpm_add_sub6.vhd
+set_global_assignment -name VHDL_FILE lpm_constant23.vhd
+set_global_assignment -name VHDL_FILE lpm_constant24.vhd
+set_global_assignment -name VHDL_FILE lpm_constant25.vhd
+set_global_assignment -name VHDL_FILE lpm_constant26.vhd
+set_global_assignment -name VHDL_FILE lpm_counter3.vhd
+set_global_assignment -name SOURCE_FILE lpm_decode5.cmp
+set_global_assignment -name SOURCE_FILE lpm_or5.cmp
+set_global_assignment -name VHDL_FILE lpm_or5.vhd
+set_global_assignment -name BDF_FILE stack_controller.bdf
+set_global_assignment -name BDF_FILE stack_memory.bdf
 set_global_assignment -name VHDL_FILE lpm_constant0.vhd
 set_global_assignment -name SOURCE_FILE lpm_constant1.cmp
 set_global_assignment -name VHDL_FILE lpm_constant1.vhd
@@ -165,3 +179,5 @@ set_global_assignment -name QIP_FILE lpm_constant21.qip
 set_global_assignment -name QIP_FILE lpm_constant22.qip
 set_global_assignment -name QIP_FILE lpm_bustri4.qip
 set_global_assignment -name QIP_FILE lpm_bustri5.qip
+set_global_assignment -name BDF_FILE OR_unit.bdf
+set_global_assignment -name BDF_FILE CMP_unit.bdf
