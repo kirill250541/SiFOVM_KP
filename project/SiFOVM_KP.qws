@@ -7,6 +7,7 @@ ptn_Child1=Document-0
 ptn_Child2=Document-1
 ptn_Child3=Document-2
 ptn_Child4=Document-3
+<<<<<<< HEAD
 ptn_Child5=Document-4
 ptn_Child6=Document-5
 ptn_Child7=Document-6
@@ -21,11 +22,24 @@ DocPathName=cache_row.bdf
 DocumentCLSID={7b19e8f2-2bbe-11d1-a082-0020affa5bde}
 IsChildFrameDetached=False
 IsActiveChildFrame=False
+=======
+[ProjectWorkspace.Frames.ChildFrames.Document-0]
+ptn_Child1=ViewFrame-0
+[ProjectWorkspace.Frames.ChildFrames.Document-0.ViewFrame-0]
+DocPathName=CMP_unit.bdf
+DocumentCLSID={7b19e8f2-2bbe-11d1-a082-0020affa5bde}
+IsChildFrameDetached=False
+IsActiveChildFrame=True
+>>>>>>> 929ffc88026ca55d16c9660077cc83c9c6673a89
 ptn_Child1=StateMap
 [ProjectWorkspace.Frames.ChildFrames.Document-1]
 ptn_Child1=ViewFrame-0
 [ProjectWorkspace.Frames.ChildFrames.Document-1.ViewFrame-0]
+<<<<<<< HEAD
 DocPathName=cache_row_memory_unit.bdf
+=======
+DocPathName=logic_NXOR.bdf
+>>>>>>> 929ffc88026ca55d16c9660077cc83c9c6673a89
 DocumentCLSID={7b19e8f2-2bbe-11d1-a082-0020affa5bde}
 IsChildFrameDetached=False
 IsActiveChildFrame=False
@@ -33,7 +47,11 @@ ptn_Child1=StateMap
 [ProjectWorkspace.Frames.ChildFrames.Document-2]
 ptn_Child1=ViewFrame-0
 [ProjectWorkspace.Frames.ChildFrames.Document-2.ViewFrame-0]
+<<<<<<< HEAD
 DocPathName=cache_row_controller_unit.bdf
+=======
+DocPathName=CMP.bdf
+>>>>>>> 929ffc88026ca55d16c9660077cc83c9c6673a89
 DocumentCLSID={7b19e8f2-2bbe-11d1-a082-0020affa5bde}
 IsChildFrameDetached=False
 IsActiveChildFrame=False
@@ -41,11 +59,16 @@ ptn_Child1=StateMap
 [ProjectWorkspace.Frames.ChildFrames.Document-3]
 ptn_Child1=ViewFrame-0
 [ProjectWorkspace.Frames.ChildFrames.Document-3.ViewFrame-0]
+<<<<<<< HEAD
 DocPathName=cache_row_unit.bdf
+=======
+DocPathName=fulladd.bdf
+>>>>>>> 929ffc88026ca55d16c9660077cc83c9c6673a89
 DocumentCLSID={7b19e8f2-2bbe-11d1-a082-0020affa5bde}
 IsChildFrameDetached=False
 IsActiveChildFrame=False
 ptn_Child1=StateMap
+<<<<<<< HEAD
 [ProjectWorkspace.Frames.ChildFrames.Document-4]
 ptn_Child1=ViewFrame-0
 [ProjectWorkspace.Frames.ChildFrames.Document-4.ViewFrame-0]
@@ -98,3 +121,5 @@ ptn_Child1=StateMap
 AFC_SIM_AP_NAME=SiFOVM_KP
 AFC_PROJ_DB_PATH=C:/Users/lapshet/Desktop/KP/project/db/SiFOVM_KP.quartus_db
 AFC_IN_REPORT=False
+=======
+>>>>>>> 929ffc88026ca55d16c9660077cc83c9c6673a89

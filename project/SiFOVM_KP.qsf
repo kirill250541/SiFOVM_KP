@@ -45,6 +45,7 @@ set_global_assignment -name LAST_QUARTUS_VERSION 9.1
 set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
 set_global_assignment -name SEARCH_PATH lab3_var7_v1/
 set_global_assignment -name SEARCH_PATH lab2_var2_v1/
+<<<<<<< HEAD
 set_global_assignment -name SIMULATION_MODE FUNCTIONAL
 set_global_assignment -name SOURCE_FILE lpm_dff7.cmp
 set_global_assignment -name BDF_FILE dff_addr.bdf
@@ -55,10 +56,17 @@ set_global_assignment -name VHDL_FILE lpm_add_sub6.vhd
 set_global_assignment -name SOURCE_FILE lpm_compare5.cmp
 set_global_assignment -name SOURCE_FILE lpm_compare6.cmp
 set_global_assignment -name SOURCE_FILE lpm_constant0.cmp
+=======
+set_global_assignment -name BDF_FILE dff_addr.bdf
+set_global_assignment -name BDF_FILE fulladd.bdf
+set_global_assignment -name SOURCE_FILE lpm_add_sub6.cmp
+set_global_assignment -name VHDL_FILE lpm_add_sub6.vhd
+>>>>>>> 929ffc88026ca55d16c9660077cc83c9c6673a89
 set_global_assignment -name VHDL_FILE lpm_constant23.vhd
 set_global_assignment -name VHDL_FILE lpm_constant24.vhd
 set_global_assignment -name VHDL_FILE lpm_constant25.vhd
 set_global_assignment -name VHDL_FILE lpm_constant26.vhd
+<<<<<<< HEAD
 set_global_assignment -name SOURCE_FILE lpm_constant27.cmp
 set_global_assignment -name VHDL_FILE lpm_counter3.vhd
 set_global_assignment -name SOURCE_FILE lpm_decode5.cmp
@@ -68,6 +76,14 @@ set_global_assignment -name SOURCE_FILE lpm_mux8.cmp
 set_global_assignment -name SOURCE_FILE lpm_or5.cmp
 set_global_assignment -name VHDL_FILE lpm_or5.vhd
 set_global_assignment -name BDF_FILE stack_controller.bdf
+=======
+set_global_assignment -name VHDL_FILE lpm_counter3.vhd
+set_global_assignment -name SOURCE_FILE lpm_decode5.cmp
+set_global_assignment -name SOURCE_FILE lpm_or5.cmp
+set_global_assignment -name VHDL_FILE lpm_or5.vhd
+set_global_assignment -name BDF_FILE stack_controller.bdf
+set_global_assignment -name BDF_FILE stack_memory.bdf
+>>>>>>> 929ffc88026ca55d16c9660077cc83c9c6673a89
 set_global_assignment -name VHDL_FILE lpm_constant0.vhd
 set_global_assignment -name SOURCE_FILE lpm_constant1.cmp
 set_global_assignment -name VHDL_FILE lpm_constant1.vhd
@@ -185,6 +201,7 @@ set_global_assignment -name QIP_FILE lpm_constant21.qip
 set_global_assignment -name QIP_FILE lpm_constant22.qip
 set_global_assignment -name QIP_FILE lpm_bustri4.qip
 set_global_assignment -name QIP_FILE lpm_bustri5.qip
+<<<<<<< HEAD
 set_global_assignment -name QIP_FILE lpm_decode9.qip
 set_global_assignment -name BDF_FILE reg_file_unit.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE reg_file_unit.vwf
@@ -218,3 +235,7 @@ set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE cache_row_unit.vwf
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name QIP_FILE lpm_decode11.qip
 set_global_assignment -name QIP_FILE lpm_constant28.qip
+=======
+set_global_assignment -name BDF_FILE OR_unit.bdf
+set_global_assignment -name BDF_FILE CMP_unit.bdf
+>>>>>>> 929ffc88026ca55d16c9660077cc83c9c6673a89
