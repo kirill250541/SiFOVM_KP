@@ -15,6 +15,7 @@
 
 FUNCTION lpm_dff3 
 (
+	aclr,
 	clock,
 	data[9..0],
 	enable

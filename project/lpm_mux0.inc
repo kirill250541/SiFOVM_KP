@@ -21,6 +21,7 @@ FUNCTION lpm_mux0
 	data3x[15..0],
 	data4x[15..0],
 	data5x[15..0],
+	data6x[15..0],
 	sel[2..0]
 )
 

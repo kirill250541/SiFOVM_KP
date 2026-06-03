@@ -1,0 +1,15 @@
+Analysis & Synthesis Status : Successful - Sat May 30 00:35:10 2026
+Quartus II Version : 9.1 Build 222 10/21/2009 SJ Web Edition
+Revision Name : SiFOVM_KP
+Top-level Entity Name : cache_row_unit
+Family : Stratix II
+Logic utilization : N/A
+    Combinational ALUTs : 53
+    Dedicated logic registers : 76
+Total registers : 76
+Total pins : 85
+Total virtual pins : 0
+Total block memory bits : 0
+DSP block 9-bit elements : 0
+Total PLLs : 0
+Total DLLs : 0

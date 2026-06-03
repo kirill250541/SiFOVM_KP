@@ -15,15 +15,11 @@
 
 FUNCTION lpm_decode1 
 (
-	data[2..0],
+	data[1..0],
 	enable
 )
 
 RETURNS (
-	eq0,
 	eq1,
-	eq2,
-	eq3,
-	eq4,
-	eq5
+	eq2
 );

@@ -13,11 +13,13 @@
 --applicable agreement for further details.
 
 
-FUNCTION lpm_constant0 
-(
-
-)
-
-RETURNS (
-	result[3..0]
-);
+component lpm_dff7
+	PORT
+	(
+		aclr		: IN STD_LOGIC ;
+		clock		: IN STD_LOGIC ;
+		data		: IN STD_LOGIC ;
+		enable		: IN STD_LOGIC ;
+		q		: OUT STD_LOGIC 
+	);
+end component;

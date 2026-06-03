@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="SiFOVM_KP">
+		<CBX_INST_ENTRY INSTANCE_NAME="|cache_row_unit|cache_row_controller_unit:inst|lpm_compare7:inst5|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_ojg.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|cache_row_unit|cache_row_memory_unit:inst1|BUSMUX:inst14|LPM_MUX:$00000" CBX_FILE_NAME="mux_dpc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|cache_row_unit|cache_row_memory_unit:inst1|lpm_mux7:inst|LPM_MUX:lpm_mux_component" CBX_FILE_NAME="mux_r5e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|cache_row_unit|cache_row_controller_unit:inst|lpm_compare1:inst6|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_big.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|cache_row_unit|cache_row_controller_unit:inst|lpm_decode6:inst4|lpm_decode:lpm_decode_component" CBX_FILE_NAME="decode_0sf.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

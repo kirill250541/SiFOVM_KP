@@ -38,13 +38,36 @@
 
 set_global_assignment -name FAMILY "Stratix II"
 set_global_assignment -name DEVICE AUTO
-set_global_assignment -name TOP_LEVEL_ENTITY stack_memory
+set_global_assignment -name TOP_LEVEL_ENTITY cache_row_unit
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 9.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "21:59:38  MAY 02, 2026"
 set_global_assignment -name LAST_QUARTUS_VERSION 9.1
 set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
 set_global_assignment -name SEARCH_PATH lab3_var7_v1/
 set_global_assignment -name SEARCH_PATH lab2_var2_v1/
+set_global_assignment -name SIMULATION_MODE FUNCTIONAL
+set_global_assignment -name SOURCE_FILE lpm_dff7.cmp
+set_global_assignment -name BDF_FILE dff_addr.bdf
+set_global_assignment -name SOURCE_FILE lpm_add_sub2.cmp
+set_global_assignment -name SOURCE_FILE lpm_add_sub3.cmp
+set_global_assignment -name SOURCE_FILE lpm_add_sub6.cmp
+set_global_assignment -name VHDL_FILE lpm_add_sub6.vhd
+set_global_assignment -name SOURCE_FILE lpm_compare5.cmp
+set_global_assignment -name SOURCE_FILE lpm_compare6.cmp
+set_global_assignment -name SOURCE_FILE lpm_constant0.cmp
+set_global_assignment -name VHDL_FILE lpm_constant23.vhd
+set_global_assignment -name VHDL_FILE lpm_constant24.vhd
+set_global_assignment -name VHDL_FILE lpm_constant25.vhd
+set_global_assignment -name VHDL_FILE lpm_constant26.vhd
+set_global_assignment -name SOURCE_FILE lpm_constant27.cmp
+set_global_assignment -name VHDL_FILE lpm_counter3.vhd
+set_global_assignment -name SOURCE_FILE lpm_decode5.cmp
+set_global_assignment -name SOURCE_FILE lpm_decode9.cmp
+set_global_assignment -name SOURCE_FILE lpm_ff1.cmp
+set_global_assignment -name SOURCE_FILE lpm_mux8.cmp
+set_global_assignment -name SOURCE_FILE lpm_or5.cmp
+set_global_assignment -name VHDL_FILE lpm_or5.vhd
+set_global_assignment -name BDF_FILE stack_controller.bdf
 set_global_assignment -name VHDL_FILE lpm_constant0.vhd
 set_global_assignment -name SOURCE_FILE lpm_constant1.cmp
 set_global_assignment -name VHDL_FILE lpm_constant1.vhd
@@ -146,12 +169,9 @@ set_global_assignment -name QIP_FILE lpm_compare2.qip
 set_global_assignment -name QIP_FILE lpm_dff5.qip
 set_global_assignment -name QIP_FILE lpm_decode8.qip
 set_global_assignment -name QIP_FILE lpm_counter2.qip
-set_global_assignment -name QIP_FILE "../../Примеры КР/Протасеня В.П/курсовой/CourseWork/Test/lpm_constant16.qip"
-set_global_assignment -name QIP_FILE "../../Примеры КР/Протасеня В.П/курсовой/CourseWork/Test/lpm_constant17.qip"
 set_global_assignment -name QIP_FILE lpm_constant16.qip
 set_global_assignment -name QIP_FILE lpm_compare3.qip
 set_global_assignment -name QIP_FILE lpm_compare4.qip
-set_global_assignment -name QIP_FILE "../../Примеры КР/Протасеня В.П/курсовой/CourseWork/Test/lpm_constant18.qip"
 set_global_assignment -name QIP_FILE lpm_constant17.qip
 set_global_assignment -name BDF_FILE cpu_unit.bdf
 set_global_assignment -name QIP_FILE lpm_bustri2.qip
@@ -165,3 +185,36 @@ set_global_assignment -name QIP_FILE lpm_constant21.qip
 set_global_assignment -name QIP_FILE lpm_constant22.qip
 set_global_assignment -name QIP_FILE lpm_bustri4.qip
 set_global_assignment -name QIP_FILE lpm_bustri5.qip
+set_global_assignment -name QIP_FILE lpm_decode9.qip
+set_global_assignment -name BDF_FILE reg_file_unit.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE reg_file_unit.vwf
+set_global_assignment -name QIP_FILE lpm_decode10.qip
+set_global_assignment -name BDF_FILE stack_memory.bdf
+set_global_assignment -name BDF_FILE stack_memory_unit.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE stack_memory_unit.vwf
+set_global_assignment -name BDF_FILE stack_controller_unit.bdf
+set_global_assignment -name QIP_FILE lpm_ff1.qip
+set_global_assignment -name QIP_FILE lpm_constant27.qip
+set_global_assignment -name QIP_FILE lpm_add_sub2.qip
+set_global_assignment -name QIP_FILE lpm_add_sub3.qip
+set_global_assignment -name QIP_FILE lpm_mux8.qip
+set_global_assignment -name QIP_FILE lpm_compare5.qip
+set_global_assignment -name QIP_FILE lpm_compare6.qip
+set_global_assignment -name VECTOR_WAVEFORM_FILE stack_controller_unit.vwf
+set_global_assignment -name QIP_FILE lpm_ff2.qip
+set_global_assignment -name VECTOR_WAVEFORM_FILE stack_unit.vwf
+set_global_assignment -name QIP_FILE lpm_dff7.qip
+set_global_assignment -name QIP_FILE lpm_compare7.qip
+set_global_assignment -name VECTOR_WAVEFORM_FILE cache_row_memory.vwf
+set_global_assignment -name BDF_FILE cache_row_controller_unit.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE cache_row_controller_unit.vwf
+set_global_assignment -name BDF_FILE cache_row_memory_unit.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE cache_row_unit.vwf
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE cache_row_unit.vwf
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name QIP_FILE lpm_decode11.qip
+set_global_assignment -name QIP_FILE lpm_constant28.qip
